@@ -1,0 +1,18 @@
+.descr {
+  margin: 0;
+  padding: 15px;
+  background: linear-gradient(
+    0deg,
+    rgba(239, 245, 245, 0.3) 0%,
+    rgba(243, 240, 234, 0.278) 100%
+  );
+  font-weight: 600;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.item {
+  list-style: none;
+}

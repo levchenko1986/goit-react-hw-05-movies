@@ -1,0 +1,14 @@
+.list {
+  list-style-type: none;
+  padding-left: 60px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #3f51b5;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
