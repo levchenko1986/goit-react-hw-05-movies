@@ -19,7 +19,12 @@ function FilmsView({ films }) {
 }
 
 FilmsView.propTypes = {
-  images: PropTypes.array,
+  films: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      url: PropTypes.string.isRequired
+    })
+  )
 };
 
 export default FilmsView;

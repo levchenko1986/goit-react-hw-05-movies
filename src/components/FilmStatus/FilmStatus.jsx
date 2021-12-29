@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { fetchFilmsByKeyWord } from "../../services/film-api";
-import ErrorView from "../ErrorView/ErrorView";
-import PendingView from "../LoadingView/LoadingView";
-import FilmsView from "../FilmsView/FilmsView";
+import ErrorView from "../../views/ErrorView/ErrorView";
+import PendingView from "../../views/LoadingView/LoadingView";
+import FilmsView from "../../views/FilmsView/FilmsView";
 import image from "../../images/the-wall.jpg";
 import styles from "./FilmStatus.module.css";
 

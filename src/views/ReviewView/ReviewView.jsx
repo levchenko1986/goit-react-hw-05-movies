@@ -1,12 +1,17 @@
 import { useState, useEffect } from 'react';
 import { fetchReviewsForFilm } from '../../services/film-api';
 import styles from './ReviewView.module.css';
+import PropTypes from "prop-types";
 
 function ReviewView({ movieId }) {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetchReviewsForFilm(movieId).then(request => setReviews(request.results));
+    fetchReviewsForFilm(movieId)
+    .then(request => setReviews(request.results))
+    .catch((error) => {
+      console.log(error);
+    });
   }, [movieId]);
 
   return (
@@ -28,5 +33,9 @@ function ReviewView({ movieId }) {
     </div>
   );
 }
+
+ReviewView.propTypes = {
+  movieId: PropTypes.string.isRequired
+};
 
 export default ReviewView;

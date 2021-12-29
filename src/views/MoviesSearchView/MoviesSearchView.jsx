@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import Searchbar from "../../components/Searchbar/Searchbar";
-import FilmStatus from "../FilmStatus/FilmStatus";
+import FilmStatus from "../../components/FilmStatus/FilmStatus";
 
 function MoviesSearchView() {
   const history = useHistory();
